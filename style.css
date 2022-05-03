@@ -115,8 +115,41 @@ button:active {
     width: 400px;
 }
 
+.boxes .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+.boxes {
+    height: 400px;
+}
+
+.boxes h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+    margin: 40px 0px;
+}
+
+.boxes .box {
+    text-align: center;
+    width: 150px;
+}
+
+.boxes img {
+    width: 150px;
+    height: 150px;
+    border: 0.2em solid #3882f6;
+    border-radius: 10px;
+    padding: 50px;
+}
+
 @media(max-width: 768px) {
     .header .container {
         flex-direction: column;
         text-align: center;
     }
+}
