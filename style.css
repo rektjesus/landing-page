@@ -30,8 +30,9 @@ button {
     color: #f9faf8;
     border-radius: 5px;
     background-color: #3882f6;
-    padding: 5px 30px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.603);
+    width: 110px;
+    height: 30px;
 }
 
 button:active {
@@ -46,12 +47,14 @@ button:active {
     padding: 0 30px;
 }
 
+/* NAVBAR SECTION */
+
 .navbar {
     background-color: #18202b;
     height: 60px;
 }
 
-.logo {
+.navbar .logo {
     font-size: 24px;
     color: #f9faf8;
     font-weight: bold;
@@ -81,6 +84,8 @@ button:active {
     color: #4e688d;
 }
 
+/* HEADER SECTION */
+
 .header {
     background-color: #1f2937;
     padding: 65px 0px;
@@ -105,7 +110,6 @@ button:active {
     color: #e5e7eb;
 }
 
-
 .header button {
     margin-top: 16px;
 }
@@ -115,16 +119,18 @@ button:active {
     width: 400px;
 }
 
+/* BOX/CARD SECTION */
+
+.boxes {
+    min-height: 400px;
+    padding-bottom: 80px;
+}
+
 .boxes .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 48px;
-}
-
-.boxes {
-    min-height: 400px;
-    padding-bottom: 134px;
+    gap: 60px;
 }
 
 .boxes h2 {
@@ -148,13 +154,86 @@ button:active {
     padding: 50px;
 }
 
+/* QUOTE SECTION */
+
+.quote {
+    min-height: 400px;
+    background-color: #e5e7eb;
+}
+
+.quote .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 400px;
+    padding: 0px 160px;
+    justify-content: center;
+}
+
+.quote p {
+    font-size: 26px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote h4 {
+    font-size: 20px;
+    color: #1f2937;
+    text-align: end;
+}
+
+/* CALL TO ACTION SECTION */
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.sign-up .container {
+    display: flex;
+    background-color: #3882f6;
+    height: 120px;
+    width: 900px;
+    border-radius: 0.6em;
+    justify-content: space-around;
+    align-items: center;
+    color: #f9faf8;
+    margin: 0px 30px;
+    gap: 16px;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container button {
+    border: 1px solid #e5e7eb;
+}
+
+/* RESPONSIVE PROPERTIES SECTION */
+
 @media(max-width: 768px) {
     .header .container {
         flex-direction: column;
         text-align: center;
     }
 
+    .header div {
+        align-items: center;
+    }
+
+    .boxes {
+        padding-bottom: 60px;
+    }
+
     .boxes .container {
         flex-direction: column;
+    }
+
+    .quote .container {
+        padding: 0px 40px;
     }
 }
