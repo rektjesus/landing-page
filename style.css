@@ -123,7 +123,8 @@ button:active {
 }
 
 .boxes {
-    height: 400px;
+    min-height: 400px;
+    padding-bottom: 134px;
 }
 
 .boxes h2 {
@@ -131,7 +132,7 @@ button:active {
     font-size: 36px;
     font-weight: bold;
     color: #1f2937;
-    margin: 40px 0px;
+    padding: 40px 0px;
 }
 
 .boxes .box {
@@ -151,5 +152,9 @@ button:active {
     .header .container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .boxes .container {
+        flex-direction: column;
     }
 }
