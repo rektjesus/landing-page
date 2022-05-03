@@ -197,13 +197,15 @@ button:active {
     min-height: 120px;
     width: 1100px;
     border-radius: 0.6em;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: #f9faf8;
     padding-top: 26px;
     padding-bottom: 26px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin: 0px 30px;
-    gap: 16px;
+    gap: 30px;
 }
 
 .container div {
@@ -255,5 +257,10 @@ button:active {
 
     .quote .container {
         padding: 0px 40px;
+    }
+
+    .sign-up .container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
